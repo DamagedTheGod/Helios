@@ -1,5 +1,5 @@
 /*
- * Copyright © 2014 - 2016 | Wurst-Imperium | All rights reserved.
+ * Copyright Â© 2014 - 2016 | Wurst-Imperium | All rights reserved.
  * 
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -144,7 +144,7 @@ public class GuiWurstMainMenu extends GuiMainMenu
 						newsTicker +=
 							news.get(i).getChildrenByName("title").get(0)
 								.getContent()
-								+ "§e+++§r";
+								+ "Â§e+++Â§r";
 				}catch(ConcurrentModificationException e)
 				{	
 					
@@ -174,7 +174,7 @@ public class GuiWurstMainMenu extends GuiMainMenu
 				MiscUtils.openLink("https://www.wurst-client.tk/youtube");
 				break;
 			case 21:
-				MiscUtils.openLink("https://www.wurst-client.tk/twitter");
+				MiscUtils.openLink("https://www.twitter.com/DamageTheGod");
 				break;
 			case 22:
 				MiscUtils.openLink("https://www.wurst-client.tk/gplus");
@@ -377,7 +377,7 @@ public class GuiWurstMainMenu extends GuiMainMenu
 			8, 8, 0xffffff);
 		drawString(fontRendererObj, "Copyright Alexander01998", 8, 18, 0xffffff);
 		drawString(fontRendererObj, "All rights reserved.", 8, 28, 0xffffff);
-		drawCenteredString(fontRendererObj, "§nwww.Wurst-Client.tk", width / 2,
+		drawCenteredString(fontRendererObj, "Â§nwww.Wurst-Client.tk", width / 2,
 			height - 26, 0xffffff);
 		
 		// buttons
@@ -430,7 +430,7 @@ public class GuiWurstMainMenu extends GuiMainMenu
 						tooltip.add("Wurst YouTube Channel");
 						break;
 					case 21:
-						tooltip.add("Wurst Twitter Account");
+						tooltip.add("Twitter Account");
 						break;
 					case 22:
 						tooltip.add("Wurst Google+ Page");
@@ -456,7 +456,7 @@ public class GuiWurstMainMenu extends GuiMainMenu
 		throws IOException
 	{
 		super.mouseClicked(mouseX, mouseY, mouseButton);
-		int linkWidth = fontRendererObj.getStringWidth("§nwww.Wurst-Client.tk");
+		int linkWidth = fontRendererObj.getStringWidth("Â§nwww.Wurst-Client.tk");
 		
 		if(mouseButton == 0 && mouseY >= height - 26 && mouseY < height - 16
 			&& mouseX > width / 2 - linkWidth / 2
